@@ -1,7 +1,8 @@
 Source: lxml
 Section: python
 Priority: optional
-Maintainer: Matthias Klose <doko@debian.org>
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Matthias Klose <doko@debian.org>
 Build-Depends: debhelper (>= 10),
   dh-python,
   python3-all-dev (>= 3.3.3),

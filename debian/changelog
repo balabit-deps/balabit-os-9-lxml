@@ -1,3 +1,15 @@
+lxml (4.8.0-1ubuntu0.1) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: Cross-site scripting
+    - debian/patches/CVE-2026-49825.patch: add 'xlink:href' to the
+      known HTML link attributes in src/lxml/html/defs.py so that
+      Cleaner/rewrite_links() sanitize javascript: URLs in embedded
+      SVG/MathML content, and add a regression test to
+      src/lxml/html/tests/test_rewritelinks.txt.
+    - CVE-2026-49825
+
+ -- Allen Huang <allen.huang@canonical.com>  Thu, 01 Oct 2026 14:14:53 +0100
+
 lxml (4.8.0-1build1) jammy; urgency=medium
 
   * No-change rebuild with Python 3.10 only
